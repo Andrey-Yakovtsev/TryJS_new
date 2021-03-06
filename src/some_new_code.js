@@ -2,20 +2,20 @@
 //
 // // ['Учим', 'JS', 'Whatever'].forEach(alert);
 //
-let number = -55;
-console.log(number / 0);
-
-let number2 = 45
-console.log(number + number2);
+// let number = -55;
+// console.log(number / 0);
+//
+// let number2 = 45
+// console.log(number + number2);
 //
 // // let list = Array(number2, number)
 // // console.log(list)
 //
-function newfunc() {
-    console.log(number);
-    console.log(number2)
-}
-newfunc();
+// function newfunc() {
+//     console.log(number);
+//     console.log(number2)
+// }
+// newfunc();
 //
 // // let myLifeStyle
 //
@@ -25,15 +25,15 @@ newfunc();
 //
 // // console.log(myLifeStyle) //Undefined
 //
-const userProfile = {
-    name: 'Имя объекта',
-    age: 30,
-    job: 'Работа какая-то'
-}
-
-userProfile.age = 20
-
-console.log(userProfile) //Тип данных
+// const userProfile = {
+//     name: 'Имя объекта',
+//     age: 30,
+//     job: 'Работа какая-то'
+// }
+//
+// userProfile.age = 20
+//
+// console.log(userProfile) //Тип данных
 
 // console.log(typeof(myLifeStyle)) //Undefined
 //
@@ -102,25 +102,56 @@ console.log(userProfile) //Тип данных
 // let messageEnd = (5>10) ? ', Вася' : ', Оля';
 // console.log(messageStart + messageEnd)
 // // можно и без скобок
-let messageEnd2 = 15>10 ? ', Вася' : ', Оля';
-console.log(messageStart + messageEnd2)
+// let messageEnd2 = 15>10 ? ', Вася' : ', Оля';
+// console.log(messageStart + messageEnd2)
 //
 // // или даже так:
 //
-messageEnd3 = number > 10 ? ', Вася' :
-    number < 6 ? ', Olya':
-        number > 7 ? ', Misha': ', Kesha'
-console.log(messageStart + messageEnd3)
+// messageEnd3 = number > 10 ? ', Вася' :
+//     number < 6 ? ', Olya':
+//         number > 7 ? ', Misha': ', Kesha'
+// console.log(messageStart + messageEnd3)
 
 
-let num = 5
+// let num = 5
 // while (num) {
 //     console.log(num)
 //     num--;
 // }
-do {
-    console.log(num);
-    num--;
-} while (num)
+// do {
+//     console.log(num);
+//     num--;
+// } while (num)
 
 
+// let number = 10;
+// for (; number < 15;) {
+//     console.log(number)
+//     number++
+//     if (number == 13) break;
+// }
+//
+// firstFor: for (let num = 0; num < 2; num++) {
+// 	for (let size = 0; size < 3; size++) {
+// 	    console.log(`Num === ${num}`)
+//         console.log(`Сайз == ${size}`)
+// 		if (size == 2) {
+// 		    console.log(`Gопали на size== ${size}`)
+// 			continue firstFor;
+// 		}
+// 		console.log(size);
+// 	}
+// }
+
+function getMessage(number) {
+    for ( number; number <= 3; number++)
+    console.log(`This is a message ${number}`)
+}
+
+getMessage(1)
+
+let getMessage2 = (param1, param2) => `${param1} ${param2}!`;
+
+console.log(
+getMessage2('какой-то', 'текст')
+)
